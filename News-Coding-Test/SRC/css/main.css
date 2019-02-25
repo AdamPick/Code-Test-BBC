@@ -1,0 +1,55 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 !important;
+}
+
+img {
+	float: left;
+}
+
+h1 {
+	position: relative;
+	padding-top: 0.3em;
+  margin-top: 0em;
+  font-weight: bold;
+  font-size:300%;
+  font-family: verdana;
+  color: white;
+}
+
+#banner{
+
+	margin: 0 auto;
+	height: 100px;
+  	width: 100%;
+  	background-color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#outputlist{
+	color:black;
+}
+
+#title{
+	text-align: center;
+}
+
+#articleText{
+	margin-bottom: 36px;
+	margin: 2em 0;
+}
