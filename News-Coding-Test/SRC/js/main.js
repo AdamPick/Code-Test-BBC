@@ -29,7 +29,7 @@ xhr.onreadystatechange = function() {
     // Parse the JSON string
     var jsonData = JSON.parse(xhr.responseText);
     
-    // Call the showArtists(), passing in the parsed JSON string
+    // Call showData(), with the JSON string given from GitHub
     showData(jsonData);
   }
 };
@@ -46,7 +46,7 @@ function showData(data) {
     var output = "<ul>"; // Open list
     var i;
     var types = ["heading","paragraph","image","list"]
-        // Loop through the artists, and add them as list items
+        // Loop through the body elements and the types from them, and add them as list items
     for (var i in data.body) {
         if (data.body[i].type == types[0])
             heading += data.body[i].model.text;
